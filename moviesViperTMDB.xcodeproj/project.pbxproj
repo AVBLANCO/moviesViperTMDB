@@ -16,6 +16,8 @@
 		88BDB6F02BE6F76C0091F6E3 /* moviesViperTMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDB6EF2BE6F76C0091F6E3 /* moviesViperTMDBTests.swift */; };
 		88BDB6FA2BE6F76C0091F6E3 /* moviesViperTMDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDB6F92BE6F76C0091F6E3 /* moviesViperTMDBUITests.swift */; };
 		88BDB6FC2BE6F76C0091F6E3 /* moviesViperTMDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDB6FB2BE6F76C0091F6E3 /* moviesViperTMDBUITestsLaunchTests.swift */; };
+		88BDB70C2BE71AEE0091F6E3 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDB70B2BE71AEE0091F6E3 /* Movies.swift */; };
+		88BDB70E2BE71E8F0091F6E3 /* MoviesApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDB70D2BE71E8F0091F6E3 /* MoviesApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		88BDB6F52BE6F76C0091F6E3 /* moviesViperTMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviesViperTMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BDB6F92BE6F76C0091F6E3 /* moviesViperTMDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesViperTMDBUITests.swift; sourceTree = "<group>"; };
 		88BDB6FB2BE6F76C0091F6E3 /* moviesViperTMDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesViperTMDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88BDB70B2BE71AEE0091F6E3 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		88BDB70D2BE71E8F0091F6E3 /* MoviesApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		88BDB7082BE6FA360091F6E3 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				88BDB70B2BE71AEE0091F6E3 /* Movies.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		88BDB70A2BE715C20091F6E3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				88BDB70D2BE71E8F0091F6E3 /* MoviesApiService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -287,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BDB70C2BE71AEE0091F6E3 /* Movies.swift in Sources */,
 				88BDB6E62BE6F76C0091F6E3 /* moviesViperTMDB.xcdatamodeld in Sources */,
 				88BDB6E32BE6F76C0091F6E3 /* Persistence.swift in Sources */,
 				88BDB6DC2BE6F7690091F6E3 /* ContentView.swift in Sources */,
 				88BDB6DA2BE6F7690091F6E3 /* moviesViperTMDBApp.swift in Sources */,
+				88BDB70E2BE71E8F0091F6E3 /* MoviesApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
