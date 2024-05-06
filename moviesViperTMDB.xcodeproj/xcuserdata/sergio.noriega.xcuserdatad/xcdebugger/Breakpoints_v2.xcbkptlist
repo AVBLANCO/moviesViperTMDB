@@ -3,4 +3,182 @@
    uuid = "4CA3C996-766D-4B6B-B52C-13671C8DC161"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73B546FD-462E-491F-A3FD-9E34A76DE247"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Modules/TopRatedMovies/TopRatedMoviePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchTopRatedMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD3214FC-E831-4E2C-BBC5-90BE331E40EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Modules/TopRatedMovies/TopRatedMoviePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchTopRatedMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E462434-D5FA-4D5E-A709-F4DDC7BAEAFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Services/MoviesApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchMovies(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7519AFD5-DCFE-4257-8148-4B88A772A2BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Services/MoviesApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchMovies(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "848CB7EB-E885-46C6-B89E-74075EF52CEE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Services/MoviesApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchMovies(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C6D2159-B6C6-4798-9B9C-8520237267FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Modules/TopRatedMovies/TopRatedMoviesRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "showListOfMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C6D2159-B6C6-4798-9B9C-8520237267FC - d1900124ad984ada"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static moviesViperTMDB.TopRatedMoviesRouter.showListOfMovies() -&gt; some"
+                  moduleName = "moviesViperTMDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/moviesViperTMDB/moviesViperTMDB/Modules/TopRatedMovies/TopRatedMoviesRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "4C6D2159-B6C6-4798-9B9C-8520237267FC - d1900124ad984ada"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static moviesViperTMDB.TopRatedMoviesRouter.showListOfMovies() -&gt; some"
+                  moduleName = "moviesViperTMDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/moviesViperTMDB/moviesViperTMDB/Modules/TopRatedMovies/TopRatedMoviesRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3BC0F91-AE06-4D9A-8651-0E66E284C1C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "moviesViperTMDB/Modules/TopRatedMovies/TopRatedMovieView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F3BC0F91-AE06-4D9A-8651-0E66E284C1C3 - 67dd041279b7fbaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (moviesViperTMDB.Movie) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, moviesViperTMDB.MovieTableView)&gt; in moviesViperTMDB.TopRatedMovieView.body.getter : some"
+                  moduleName = "moviesViperTMDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/moviesViperTMDB/moviesViperTMDB/Modules/TopRatedMovies/TopRatedMovieView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F3BC0F91-AE06-4D9A-8651-0E66E284C1C3 - 67dd041279b7fbcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (moviesViperTMDB.Movie) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, moviesViperTMDB.MovieTableView)&gt; in moviesViperTMDB.TopRatedMovieView.body.getter : some"
+                  moduleName = "moviesViperTMDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/moviesViperTMDB/moviesViperTMDB/Modules/TopRatedMovies/TopRatedMovieView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
