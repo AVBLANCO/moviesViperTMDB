@@ -8,35 +8,57 @@
 import Foundation
 import Combine
 
-protocol TopRatedMovieInteractorProtocol {
-    func fetchRatedMovies(completion: @escaping(Result<[Movie], Error>) -> Void)
-}
 
-class TopRatedMovieInteractor: ObservableObject,TopRatedMovieInteractorProtocol{
-    let moviesApiService: MoviesApiService
+class TopRatedMovieInteractor {
+    private let model: DataLayer
+    private var cancellables = Set<AnyCancellable>()
+    @Published var movieViewModel: [MovieViewModel] = []
     
-    @Published var movies: [Movie] = []
-    
-    init(moviesApiService: MoviesApiService) {
-        self.moviesApiService = moviesApiService
+    init(model: DataLayer) {
+        self.model = model
+        setup()
     }
     
-    //    func fetchRatedMovies(completion: @escaping(Result<[Movie], Error>) -> Void) {
-    //        moviesApiService.fetchMovies { result in
-    //            completion(result)
-    //
-    //        }
-    //    }
+    private func setup(){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.model.$movieList
+            .map({ movies -> [MovieViewModel] in
+                return movies.map {
+                    let releaseDate = dateFormatter.date(from: $0.releaseDate)
+                    
+                    return MovieViewModel(id: Int($0.id),
+                                   title: $0.title,
+                                   posterPath: $0.posterPath,
+                                   overview: $0.overview,
+//                                   releaseDate: $0.releaseDate,
+                                   releaseDate: releaseDate,
+                                   voteAverage: $0.voteAverage,
+                                   adult: $0.adult,
+                                   backdropPath: $0.backdropPath,
+                                   originalTitle: $0.originalTitle)
+                }
+                
+            })
+            .replaceError(with: [])
+            .assign(to: \.movieViewModel, on: self)
+            .store(in: &cancellables)
+    }
     
-    func fetchRatedMovies(completion: @escaping(Result<[Movie], Error>) -> Void) {
-        moviesApiService.fetchMovies { [weak self] result in
+    func fetchApi() {
+        MoviesApiService.shared.fetchMovies { result in
             switch result {
-            case .success(let movies):
-                self?.movies = movies
-                completion(.success(movies))
+            case .success(let movieResponse):
+                debugPrint("Response \(movieResponse) ")
+                self.model.saveMoviesFromAPI(movieResponse.results)
             case .failure(let error):
-                completion(.failure(error))
+                debugPrint("Error")
             }
         }
     }
+//    
+//    func saveMoviesFromAPI(_ movies: [MovieViewModel]) {
+//        dataProvider.saveMovies(movies)
+//    }
+    
 }

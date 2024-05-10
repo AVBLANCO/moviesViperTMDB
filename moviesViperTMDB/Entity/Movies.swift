@@ -8,10 +8,10 @@
 import Foundation
 
 struct MoviesResponse: Decodable {
-    let page: Int
-    let results: [Movie]
-    let totalPages: Int
-    let totalResults: Int
+    let page: Int?
+    let results: [MovieViewModel]
+    let totalPages: Int?
+    let totalResults: Int?
     
     enum CodingKeys: String, CodingKey {
         case page
@@ -23,23 +23,23 @@ struct MoviesResponse: Decodable {
 }
 
 // This is a Model o Entity into Module
-struct Movie: Codable {
+struct MovieViewModel: Codable {
     let id: Int
     let title: String
-    let posterPath: String
+    let posterPath: String?
     let overview: String
-    let releaseDate: String
-    let voteAverage: String
-    // mas atributos del response
+    let releaseDate: Date?
+    let voteAverage: Double
     let adult: Bool
-    let backdropPath: String
+    let backdropPath: String?
     let originalTitle: String
     
     enum CodingKeys: String, CodingKey {
         case id
         case adult
-        case title,overview, releaseDate, voteAverage, backdropPath, originalTitle
+        case title, overview, voteAverage, backdropPath, originalTitle
         case posterPath = "poster_path"
+        case releaseDate = "release_date"
     }
     
 }

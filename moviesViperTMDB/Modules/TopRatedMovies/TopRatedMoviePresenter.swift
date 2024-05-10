@@ -6,26 +6,24 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
 
 class TopRatedMoviePresenter: ObservableObject {
-    weak var view: TopRatedMovieViewProtocol?
-    var interactor: TopRatedMovieInteractorProtocol?
-    @Published var movies: [Movie] = []
+    private let interactor: TopRatedMovieInteractor
+    private let router = TopRatedMoviesRouter()
+    private var cancellables = Set<AnyCancellable>()
+    @Published var movieViewModel: [MovieViewModel] = []
     
-    func fetchTopRatedMovies() {
-        interactor?.fetchRatedMovies { result in
-            switch result {
-            case .success(let movies):
-//                self.view?.showTopRatedMovies(movies)
-                DispatchQueue.main.async {
-                    self.movies = movies
-                }
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    self.view?.showError(error)
-                }
-            }
-            
-        }
+    init(interactor: TopRatedMovieInteractor) {
+        self.interactor = interactor
+        interactor.$movieViewModel
+            .assign(to: \.movieViewModel, on: self)
+            .store(in: &self.cancellables)
+    }
+    
+    func fetchApi() {
+        interactor.fetchApi()
     }
 }
