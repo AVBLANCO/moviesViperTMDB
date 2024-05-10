@@ -15,10 +15,13 @@ struct TopRatedMovieView: View {
         NavigationView {
             List {
                 ForEach(presenter.movieViewModel, id: \.id) { movie in
-                    MovieRow(movie: movie)
+                    NavigationLink(destination: MovieDetailView(movie: movie)) {
+                        MovieRow(movie: movie)
+                    }
                 }
             }
             .navigationTitle("Top Rated Movies")
+            font(.custom("Salium", size: 20))
         }
         .onAppear {
             presenter.fetchApi()
@@ -116,7 +119,7 @@ class ImageLoader: ObservableObject {
             guard let data = data else {
                 DispatchQueue.main.async {
                     self.error = NSError(domain: "com.example.ImageLoader", code: -1, 
-                                         userInfo: [NSLocalizedDescriptionKey: "No data received"]) 
+                                         userInfo: [NSLocalizedDescriptionKey: "No data received"])
 
                 }
                 return
