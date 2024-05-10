@@ -18,8 +18,15 @@ struct MovieDetailView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                 
-                AsyncImage(url: movie.posterPath ?? "")
-                    .aspectRatio(contentMode: .fit)
+                if let backdropPath = movie.backdropPath,
+                   let url = URL(string: "https://image.tmdb.org/t/p/w200\(backdropPath)") {
+                    AsyncImage(url: url.absoluteString)
+                        .aspectRatio(contentMode: .fit)
+                } else {
+                    Image(systemName: "photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
                 
                 Text(movie.overview)
                     .font(.body)
@@ -29,7 +36,7 @@ struct MovieDetailView: View {
                         .font(.body)
                     Spacer()
                     HStack {
-                        Text("Rating: \(movie.voteAverage)")
+                        Text("Rating: \(String(format: "%.2f", movie.voteAverage))")
                         Image(systemName: "star.fill")
                             .foregroundColor(.yellow)
                     }
