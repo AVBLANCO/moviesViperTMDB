@@ -21,7 +21,7 @@ struct TopRatedMovieView: View {
                 }
             }
             .navigationTitle("Top Rated Movies")
-            font(.custom("Salium", size: 20))
+            font(Font.custom("Salium", size: 20))
         }
         .onAppear {
             presenter.fetchApi()

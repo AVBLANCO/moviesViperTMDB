@@ -39,6 +39,7 @@
 		88FCD18E2BEECFE800AB2306 /* VisualComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCD18D2BEECFE800AB2306 /* VisualComponentView.swift */; };
 		88FCD1912BEEDEA800AB2306 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 88FCD1902BEEDEA800AB2306 /* warning.png */; };
 		88FCD1932BEEE2C700AB2306 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCD1922BEEE2C700AB2306 /* PopupView.swift */; };
+		88FCD1952BEF195300AB2306 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCD1942BEF195300AB2306 /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		88FCD18D2BEECFE800AB2306 /* VisualComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualComponentView.swift; sourceTree = "<group>"; };
 		88FCD1902BEEDEA800AB2306 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 		88FCD1922BEEE2C700AB2306 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		88FCD1942BEF195300AB2306 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 			children = (
 				88FCD18D2BEECFE800AB2306 /* VisualComponentView.swift */,
 				88FCD1922BEEE2C700AB2306 /* PopupView.swift */,
+				88FCD1942BEF195300AB2306 /* CellView.swift */,
 			);
 			path = VisualComponent;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				88BDB7352BE9B7250091F6E3 /* DataLayer.swift in Sources */,
 				88BDB7292BE846880091F6E3 /* DetailMoviesView.swift in Sources */,
 				88BDB72B2BE936840091F6E3 /* DetailMoviesPresenter.swift in Sources */,
+				88FCD1952BEF195300AB2306 /* CellView.swift in Sources */,
 				88BDB70E2BE71E8F0091F6E3 /* MoviesApiService.swift in Sources */,
 				88BDB7272BE8416F0091F6E3 /* TopRatedMoviesRouter.swift in Sources */,
 				88FCD1932BEEE2C700AB2306 /* PopupView.swift in Sources */,

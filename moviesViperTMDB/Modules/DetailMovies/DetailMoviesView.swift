@@ -41,14 +41,19 @@ struct MovieDetailView: View {
                             .foregroundColor(.yellow)
                     }
                 }
-                Spacer()
-                NavigationLink(destination: VisualComponentView()) {
-                    Text("REdirect To Componet Visual ")
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
+                HStack {
+                    Spacer()
+                    
+                    NavigationLink(destination: VisualComponentView()) {
+                        Text("Redirect To Component Visual")
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                    Spacer()
+                }                
             }
             .padding()
         }
