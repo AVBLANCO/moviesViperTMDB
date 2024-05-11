@@ -129,9 +129,9 @@ struct VisualComponentView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    isRatingModalPresented.toggle()
+                    isRatingModalPresented.toggle() // Activa el estado para mostrar el PopupView
                 }) {
-                    Text("Calificar ")
+                    Text("Calificar")
                         .padding()
                         .foregroundColor(.white)
                         .background(Color.red)
@@ -139,7 +139,9 @@ struct VisualComponentView: View {
                         .font(Font.custom("Swift-04-Regular", size: 15))
                 }
                 Spacer()
-            } .sheet(isPresented: $isRatingModalPresented) {
+            }
+            .padding()
+            .sheet(isPresented: $isRatingModalPresented) {
                 PopupView(isPresented: $isRatingModalPresented)
             }
         }

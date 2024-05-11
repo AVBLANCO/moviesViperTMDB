@@ -12,13 +12,13 @@ struct PopupView: View {
     @Binding var isPresented: Bool
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
             Color.white
                 .frame(width: 300, height: 400)
                 .cornerRadius(20)
                 .shadow(radius: 10)
             
-            VStack {
+            VStack (spacing: 25 ){
                 Text("Popup Title")
                     .font(.title)
                     .padding()
@@ -39,21 +39,23 @@ struct PopupView: View {
                             .foregroundColor(.yellow) // Color de las estrellas
                     }
                 }
-                .padding()
+                .padding(.vertical, 25)
+                .padding(.horizontal, 40)
+//                .background(Color.color6)
+                .background(Color.color10)
+                .cornerRadius(25)
                 
-                Spacer()
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            isPresented = false
-                        }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundColor(.red)
-                                .font(.title)
-                        }
-                        .padding(.trailing, 20)
-                        .padding(.top, 20)
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        isPresented.toggle() // Activa el estado para mostrar el PopupView
+                    }) {
+                        Text("Calificar")
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.red)
+                            .cornerRadius(10)
+                            .font(Font.custom("Swift-04-Regular", size: 15))
                     }
                     Spacer()
                 }
